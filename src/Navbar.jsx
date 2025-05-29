@@ -1,20 +1,27 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Left: Your Name */}
-        <div className="text-xl font-bold text-gray-800">Your Name</div>
+    <nav className="w-full fixed top-0 left-0 z-50 bg-black py-5 px-8">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Brand Name */}
+        <div className="text-white text-2xl font-bold tracking-wide">
+          <span className="text-orange-500 text-3xl align-top">'</span>
+          Godsherit
+          <span className="text-orange-500">age.</span>
+        </div>
 
-        {/* Right: Page Links */}
-        <ul className="flex space-x-6 text-gray-600 font-medium">
+        {/* Navigation Links */}
+        <ul className="flex space-x-10 text-white font-medium text-sm">
           <li>
-            <a href="#about" className="hover:text-blue-600">About</a>
+            <a href="#home" className="text-orange-500">Home</a>
           </li>
           <li>
-            <a href="#projects" className="hover:text-blue-600">Projects</a>
+            <a href="#about" className="hover:text-orange-500 transition">About Me</a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-blue-600">Contact</a>
+            <a href="#resume" className="hover:text-orange-500 transition">Resume</a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-orange-500 transition">Contact Me</a>
           </li>
         </ul>
       </div>
