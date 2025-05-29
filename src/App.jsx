@@ -6,8 +6,15 @@ import './App.css'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold">🚀 Tailwind is Working!</h1>
+    <div>
+      <Navbar />
+
+      {/* Add top padding so content doesn't hide under navbar */}
+      <div className="pt-20">
+        <section id="about" className="p-8">About Section</section>
+        <section id="projects" className="p-8">Projects Section</section>
+        <section id="contact" className="p-8">Contact Section</section>
+      </div>
     </div>
   );
 }
