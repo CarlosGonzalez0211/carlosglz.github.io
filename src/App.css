@@ -1,0 +1,27 @@
+/* === General Layout === */
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+/* === About Section === */
+#about {
+  background: #f4f4f4;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+#about.visible {
+  opacity: 1;
+}
+
+/* === Projects Section === */
+#projects {
+  background: #eaeaea;
+  padding: 100px 20px;
+}
+
+/* === Contact Section === */
+#contact {
+  background: #ddd;
+  padding: 100px 20px;
+}

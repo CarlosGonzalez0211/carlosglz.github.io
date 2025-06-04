@@ -1,10 +1,19 @@
-import Navbar from './Navbar';
-import './index.css';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-export default function App() {
+function App() {
   return (
-    <div className="h-screen bg-red-500 text-white text-4xl flex items-center justify-center">
-      Tailwind is Working
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }
+
+export default App;
